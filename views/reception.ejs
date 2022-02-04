@@ -11,49 +11,28 @@
 
 <body>
 
-  <h2>ユーザー登録</h2>
+  <h2>初回無料相談受付</h2>
 
   <form>
     <div>
-      <label for='ownerName'>オーナー名</label>
-      <div>
-        姓<br>
-        <input type='text' id='familyName'>
-      </div>
-      <div>
-        名<br>
-        <input type='text' id='name'>
-      </div>
+      <label>お名前</label><br>
+      <input type='text' id='name'>
     </div>
     <div>
-      <label for='phoneNumber'>電話番号</label><br>
+      <label>お名前(よみがな)</label><br>
+      <input type='text' id='yomigana'>
+    </div>
+    <div>
+      <label>電話番号</label><br>
       <input type='tel' id='phoneNumber'>
     </div>
-    <div id='myCarInformation'>
-      <label >マイカー情報</label>
-      <div>
-        <div>
-          車種<br>
-          <input type='text' id='carType' name='myCar'>
-        </div>
-        <div>
-          車券有効期限<br>
-          <input type='date' id='effectivedate' name='myCar'>
-        </div>
-      </div>
-    </div>
     <div>
-      <input id='addMyCar'  type='button' value='+マイカーを追加'>
-    </div>
-    <div>
-      <label for='shopId'>ショップID ※店舗店員にご確認ください</label><br>
-      <input type='text' id='shopId'>
-    </div>
-    <div>
-      <input type='checkbox' id='agreement'>ご利用規約に同意する
-    </div>
-    <div>
-      ご利用規約は<a href='https://example.com/'>こちら</a>
+      <label>ご希望</label><br>
+      <select id='wish'>
+        <option value='diet'>ダイエット</option>
+        <option value='bulkUp'>筋量アップ</option>
+        <option value='other'>その他</option>
+      </select>
     </div>
     <div>
       <input type='button' id='check' value='確認する' >

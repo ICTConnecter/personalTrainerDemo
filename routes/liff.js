@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('A-1_AccountRegist');
+  res.render('reception');
 });
 
-router.post('/a2', function(req, res, next) {
+router.post('/conf', function(req, res, next) {
   console.log(req.body);
-  res.render('A-2_AccountRegist-confirm');
+  res.render('receptionConf');
 });
 
 module.exports = router;
