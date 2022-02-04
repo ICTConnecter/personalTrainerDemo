@@ -35,7 +35,9 @@ var lineBot = (req,res) => {
         .then(console.log('all promises passed'))
         .catch(e=>console.error(e.stack));
 }
-  
+
+// フォロー時の処理
+
 var greeting_follow = async (ev) => {
     var profile = await client.getProfile(ev.source.userId);
     return client.replyMessage(ev.replyToken,{
@@ -43,7 +45,9 @@ var greeting_follow = async (ev) => {
         "text":`${profile.displayName}さん、フォローありがとうございます\uDBC0\uDC04`
     });
 }
-  
+
+// メッセージ受信時の処理
+
 var handleMessageEvent = async (ev) => {
     var profile = await client.getProfile(ev.source.userId);
     var text = (ev.message.type === 'text') ? ev.message.text : '';
