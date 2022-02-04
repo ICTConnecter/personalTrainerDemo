@@ -8,16 +8,16 @@ test.addEventListener('click', function(){
 
 // ◆入力値の取得
     // お名前
-    var nameElement = document.getElementById('familyName');
+    var nameElement = document.getElementById('name');
     var name = nameElement.value;  
     // お名前(よみがな)
-    var yomiganaElement = document.getElementById('familyName');
+    var yomiganaElement = document.getElementById('yomigana');
     var yomigana = yomiganaElement.value; 
     // 電話番号
     var phoneNumberElement = document.getElementById('phoneNumber');
     var phoneNumber = phoneNumberElement.value;
     // ご希望
-    var wishElement = document.getElementById('carType');
+    var wishElement = document.getElementById('wish');
     var wish = wishElement.value;
     // すべてをデータに格納
     var data = {
