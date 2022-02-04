@@ -1,5 +1,4 @@
 var express = require('express');
-var sexChose = require('../const/sexChose');
 var router = express.Router();
 // LINEトークのモジュールを読み込み
 var line = require('@line/bot-sdk');
