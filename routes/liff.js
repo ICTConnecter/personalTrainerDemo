@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/conf', function(req, res, next) {
+  console.log("↓これです");
   console.log(req.body);
   res.render('receptionConf');
 });
