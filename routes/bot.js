@@ -177,53 +177,8 @@ var lineBot = (req,res) => {
 var greeting_follow = async (ev) => {
   var profile = await client.getProfile(ev.source.userId);
   return client.replyMessage(ev.replyToken,{
-    "type": "bubble",
-    "hero": {
-      "type": "image",
-      "url": "https://personal-trainer-demo.herokuapp.com/images/beforeAfter.jpg",
-      "size": "full",
-      "aspectRatio": "20:13",
-      "aspectMode": "cover",
-      "action": {
-        "type": "uri",
-        "uri": "http://linecorp.com/"
-      }
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "自己紹介",
-          "weight": "bold",
-          "size": "xl"
-        },
-        {
-          "type": "box",
-          "layout": "vertical",
-          "margin": "lg",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "baseline",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "フォローありがとうございます。\n JOY FIT 認定トレーナーの野村 修平です。\n ～　自己紹介文　～\n トレーニングについてご不明な点がございましたらご気軽にお声がけください!!",
-                  "wrap": true,
-                  "color": "#666666",
-                  "size": "sm",
-                  "flex": 5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+    "type":"text",
+    "text":`登録ありがとう`
   });
 }
 
