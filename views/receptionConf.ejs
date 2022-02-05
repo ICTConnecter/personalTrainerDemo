@@ -19,29 +19,26 @@
 
   <h2>受付内容確認</h2>
 
-  <form action="">
+  <form action="https://personal-trainer-demo.herokuapp.com/liff/conf" method="post">
     <div>
       <label>お名前</label><br>
-      <input type='text' id='name' value=name >
+      <input type='text' name='name' value=name readonly>
     </div>
     <div>
       <label>お名前(よみがな)</label><br>
-      <input type='text' id='yomigana'>
+      <input type='text' name='yomigana' value=yomigana readonly>
     </div>
     <div>
       <label>電話番号</label><br>
-      <input type='tel' id='phoneNumber'>
+      <input type='tel' name='phoneNumber' value=phoneNumber readonly>
     </div>
     <div>
       <label>ご希望</label><br>
-      <select id='wish'>
-        <option value='diet'>ダイエット</option>
-        <option value='bulkUp'>筋量アップ</option>
-        <option value='other'>その他</option>
-      </select>
+      <input type='text' name='wish' value=wish readonly>
     </div>
     <div>
-      <input type='button' id='check' value='確認する' >
+      <input type='submit' value='送信'>
+      <input type='submit' value='変更'>
     </div>
   </form>
   
