@@ -39,7 +39,8 @@ var lineBot = (req,res) => {
 
 var greeting_follow = async (ev) => {
     var profile = await client.getProfile(ev.source.userId);
-    return client.replyMessage(ev.replyToken,[
+    return client.replyMessage(ev.replyToken,
+      // [
       {
         "type": "bubble",
         "hero": {
@@ -88,89 +89,91 @@ var greeting_follow = async (ev) => {
             }
           ]
         }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://personal-trainer-demo.herokuapp.com/images/beforeAfter.jpg",
-          "size": "full",
-          "aspectRatio": "20:13",
-          "aspectMode": "cover",
-          "action": {
-            "type": "uri",
-            "uri": "http://linecorp.com/"
-          }
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "パーソナルトレーニングの\nご案内",
-              "weight": "bold",
-              "size": "md"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "margin": "lg",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "spacing": "sm",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "ダイエットやバルクアップのためのトレーニング、食事に関するご相談を承っております。\nパーソナルトレーニングでダイエットを2か月実施したトレーニーのBefore Afterを公開しております。\nご興味のある方は下の「Before After」より詳細をご確認ください。\n初回の無料相談もございますので、ご気軽に下の「パーソナルトレーニング受付」よりご連絡ください。",
-                      "wrap": true,
-                      "color": "#666666",
-                      "size": "sm",
-                      "flex": 5
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "footer": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "button",
-              "style": "link",
-              "height": "sm",
-              "action": {
-                "type": "uri",
-                "label": "Before After",
-                "uri": "https://line.me/R/home/public/post?id=483iqyqo&postId=1164408225807023777"
-              }
-            },
-            {
-              "type": "button",
-              "style": "link",
-              "height": "sm",
-              "action": {
-                "type": "uri",
-                "label": "パーソナルトレーニング受付",
-                "uri": "https://personal-trainer-demo.herokuapp.com/liff"
-              }
-            },
-            {
-              "type": "spacer",
-              "size": "sm"
-            }
-          ],
-          "flex": 0
-        }
       }
-      ]);
+      // ,
+      // {
+      //   "type": "bubble",
+      //   "hero": {
+      //     "type": "image",
+      //     "url": "https://personal-trainer-demo.herokuapp.com/images/beforeAfter.jpg",
+      //     "size": "full",
+      //     "aspectRatio": "20:13",
+      //     "aspectMode": "cover",
+      //     "action": {
+      //       "type": "uri",
+      //       "uri": "http://linecorp.com/"
+      //     }
+      //   },
+      //   "body": {
+      //     "type": "box",
+      //     "layout": "vertical",
+      //     "contents": [
+      //       {
+      //         "type": "text",
+      //         "text": "パーソナルトレーニングの\nご案内",
+      //         "weight": "bold",
+      //         "size": "md"
+      //       },
+      //       {
+      //         "type": "box",
+      //         "layout": "vertical",
+      //         "margin": "lg",
+      //         "spacing": "sm",
+      //         "contents": [
+      //           {
+      //             "type": "box",
+      //             "layout": "baseline",
+      //             "spacing": "sm",
+      //             "contents": [
+      //               {
+      //                 "type": "text",
+      //                 "text": "ダイエットやバルクアップのためのトレーニング、食事に関するご相談を承っております。\nパーソナルトレーニングでダイエットを2か月実施したトレーニーのBefore Afterを公開しております。\nご興味のある方は下の「Before After」より詳細をご確認ください。\n初回の無料相談もございますので、ご気軽に下の「パーソナルトレーニング受付」よりご連絡ください。",
+      //                 "wrap": true,
+      //                 "color": "#666666",
+      //                 "size": "sm",
+      //                 "flex": 5
+      //               }
+      //             ]
+      //           }
+      //         ]
+      //       }
+      //     ]
+      //   },
+      //   "footer": {
+      //     "type": "box",
+      //     "layout": "vertical",
+      //     "spacing": "sm",
+      //     "contents": [
+      //       {
+      //         "type": "button",
+      //         "style": "link",
+      //         "height": "sm",
+      //         "action": {
+      //           "type": "uri",
+      //           "label": "Before After",
+      //           "uri": "https://line.me/R/home/public/post?id=483iqyqo&postId=1164408225807023777"
+      //         }
+      //       },
+      //       {
+      //         "type": "button",
+      //         "style": "link",
+      //         "height": "sm",
+      //         "action": {
+      //           "type": "uri",
+      //           "label": "パーソナルトレーニング受付",
+      //           "uri": "https://personal-trainer-demo.herokuapp.com/liff"
+      //         }
+      //       },
+      //       {
+      //         "type": "spacer",
+      //         "size": "sm"
+      //       }
+      //     ],
+      //     "flex": 0
+      //   }
+      // }
+      // ]
+      );
 }
 
 // メッセージ受信時の処理
@@ -181,7 +184,6 @@ var handleMessageEvent = async (ev) => {
      
     switch(text){
         case '診断開始':
-            console.log(sexChose);
             return client.replyMessage(ev.replyToken,{
               "type":"text",
               "text":`診断機能を実装予定`
