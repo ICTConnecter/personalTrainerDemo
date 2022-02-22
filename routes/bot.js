@@ -15,6 +15,7 @@ router.post('/hook',line.middleware(config),(req,res)=> lineBot(req,res));
 
 // トークの処理　ココから
 var lineBot = (req,res) => {
+  console.log('通りました')
     res.status(200).end();
     var events = req.body.events;
     var promises = [];
