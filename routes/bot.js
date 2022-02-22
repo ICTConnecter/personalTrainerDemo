@@ -192,7 +192,7 @@ var handleMessageEvent = async (ev) => {
       },
       {
         "type": "imagemap",
-        "baseUrl": "URL設定",
+        "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/chooseMensBody.jpg",
         "altText": "性別選択ボタン",
         "baseSize": {
             "width": 1040,
