@@ -220,7 +220,7 @@ var handleMessageEvent = async (ev) => {
             }
         ]
       }]);
-    } else if ('トレーニング解説' = text) {
+    } else if ('トレーニング解説' == text) {
       return client.replyMessage(ev.replyToken,{
         "type":"text",
         "text":`トレーニング解説機能を実装予定`
