@@ -185,6 +185,7 @@ var handleMessageEvent = async (ev) => {
     var text = (ev.message.type === 'text') ? ev.message.text : '';
     
     if ('診断開始' = text) {
+      console.log("通過しました");
       return client.replyMessage(ev.replyToken,[{
         "type":"text",
         "text":`性別を選択してください`
