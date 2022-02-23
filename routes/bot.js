@@ -15,7 +15,6 @@ router.post('/hook',line.middleware(config),(req,res)=> lineBot(req,res));
 
 // トークの処理　ココから
 var lineBot = (req,res) => {
-  console.log('通りました')
     res.status(200).end();
     var events = req.body.events;
     var promises = [];
@@ -663,6 +662,7 @@ var handleMessageEvent = async (ev) => {
 // imagemapメッセージ用画像レスポンス
 router.get('/imagemap/chooseSex/:filename', function (req, res) {
   console.log(req.params.filename);
+  console.log("通りました");
   res.sendFile(path.resolve('../public/images/imagemap/chooseSex/'+req.params.filename+'.jpg'));
 });
 router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
