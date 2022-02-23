@@ -190,32 +190,19 @@ var handleMessageEvent = async (ev) => {
       },
       {
         "type": "imagemap",
-        "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseSex",
+        "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/imagemap/chooseSex",
         "altText": "性別選択ボタン",
-        "baseSize": {
-            "width": 1040,
-            "height": 1202
-        },
+        "baseSize": {"width": 1040, "height": 1202},
         "actions": [
             {
                 "type": "message",
                 "text": "性別：男性",
-                "area": {
-                    "x": 0,
-                    "y": 0,
-                    "width": 520,
-                    "height": 1040
-                }
+                "area": {"x": 0, "y": 0, "width": 520, "height": 1040}
             },
             {
                 "type": "message",
                 "text": "性別：女性",
-                "area": {
-                    "x": 520,
-                    "y": 0,
-                    "width": 520,
-                    "height": 1040
-                }
+                "area": {"x": 520, "y": 0, "width": 520, "height": 1040}
             }
         ]
       }]);
@@ -659,20 +646,20 @@ var handleMessageEvent = async (ev) => {
     }
 }
 
-// imagemapメッセージ用画像レスポンス
-router.get('/imagemap/chooseSex/700', function (req, res, next) {
-  console.log("通りました");
-  let filepath = path.join(__dirname, '../public/images/imagemap/chooseSex/700.jpg');
-  res.sendFile(filepath);
-  console.log("とりあえず返したで");
-});
-router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
-  console.log(req.params.filename);
-  res.sendFile(path.resolve('../public/images/imagemap/chooseMensBody/'+req.params.filename+'.jpg'));
-});
-router.get('/imagemap/chooseWomensBody/:filename', function (req, res) {
-  console.log(req.params.filename);
-  res.sendFile(path.resolve('../public/images/imagemap/chooseWomensBody/'+req.params.filename+'.jpg'));
-});
+// // imagemapメッセージ用画像レスポンス
+// router.get('/imagemap/chooseSex/700', function (req, res, next) {
+//   console.log("通りました");
+//   let filepath = path.join(__dirname, '../public/images/imagemap/chooseSex/700.jpg');
+//   res.sendFile(filepath);
+//   console.log("とりあえず返したで");
+// });
+// router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
+//   console.log(req.params.filename);
+//   res.sendFile(path.resolve('../public/images/imagemap/chooseMensBody/'+req.params.filename+'.jpg'));
+// });
+// router.get('/imagemap/chooseWomensBody/:filename', function (req, res) {
+//   console.log(req.params.filename);
+//   res.sendFile(path.resolve('../public/images/imagemap/chooseWomensBody/'+req.params.filename+'.jpg'));
+// });
 
 module.exports = router;
