@@ -36,6 +36,7 @@ var lineBot = (req,res) => {
         .catch(e=>console.error(e.stack));
 }
 
+// フォロー時の処理
 var greeting_follow = async (ev) => {
   var profile = await client.getProfile(ev.source.userId);
   return client.replyMessage(ev.replyToken,[{
@@ -178,9 +179,7 @@ var greeting_follow = async (ev) => {
   }]);
 }
 
-
 // メッセージ受信時の処理
-
 var handleMessageEvent = async (ev) => {
     var profile = await client.getProfile(ev.source.userId);
     var text = (ev.message.type === 'text') ? ev.message.text : '';
@@ -192,7 +191,7 @@ var handleMessageEvent = async (ev) => {
       },
       {
         "type": "imagemap",
-        "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/chooseMensBody.jpg",
+        "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseSex",
         "altText": "性別選択ボタン",
         "baseSize": {
             "width": 1040,
@@ -236,7 +235,7 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/chooseMensBody.jpg",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseMensBody",
           "altText": "理想選択ボタン",
           "baseSize": {
               "width": 1040,
@@ -342,7 +341,7 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/chooseMensBody.jpg",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseMensBody",
           "altText": "現状選択ボタン",
           "baseSize": {
               "width": 1040,
@@ -452,7 +451,7 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/chooseWomensBody.jpg",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseWomensBody",
           "altText": "理想選択ボタン",
           "baseSize": {
               "width": 1040,
@@ -558,7 +557,7 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/chooseWomensBody.jpg",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseWomensBody",
           "altText": "現状選択ボタン",
           "baseSize": {
               "width": 1040,
@@ -661,8 +660,18 @@ var handleMessageEvent = async (ev) => {
     }
 }
 
-// ココまで
-
-
+// imagemapメッセージ用画像レスポンス
+router.get('/imagemap/chooseSex/:filename', function (req, res) {
+  console.log(req.params.filename);
+  res.sendFile(path.resolve('../public/images/imagemap/chooseSex/'+req.params.filename+'.jpg'));
+});
+router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
+  console.log(req.params.filename);
+  res.sendFile(path.resolve('../public/images/imagemap/chooseMensBody/'+req.params.filename+'.jpg'));
+});
+router.get('/imagemap/chooseWomensBody/:filename', function (req, res) {
+  console.log(req.params.filename);
+  res.sendFile(path.resolve('../public/images/imagemap/chooseWomensBody/'+req.params.filename+'.jpg'));
+});
 
 module.exports = router;
