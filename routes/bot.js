@@ -660,9 +660,9 @@ var handleMessageEvent = async (ev) => {
 }
 
 // imagemapメッセージ用画像レスポンス
-router.get('/imagemap/chooseSex/700', function (req, res) {
+router.get('/imagemap/chooseSex/700', function (req, res, next) {
   console.log("通りました");
-  let filepath = path.join(__dirname, 'public/images/imagemap/chooseSex/700.jpg');
+  let filepath = path.join(__dirname, '../public/images/imagemap/chooseSex/700.jpg');
   res.sendFile(filepath);
 });
 router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
