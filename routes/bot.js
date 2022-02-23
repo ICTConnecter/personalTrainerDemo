@@ -221,7 +221,7 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseMensBody",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/imagemap/chooseMensBody",
           "altText": "理想選択ボタン",
           "baseSize": {
               "width": 1040,
@@ -231,92 +231,48 @@ var handleMessageEvent = async (ev) => {
               {
                   "type": "message",
                   "text": "${text}\n理想：3-4％",
-                  "area": {
-                      "x": 0,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：6-7％",
                   "area": {
-                      "x": 346,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                      "x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：10-12％",
-                  "area": {
-                      "x": 692,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：15％",
-                  "area": {
-                      "x": 0,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：20％",
-                  "area": {
-                      "x": 346,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：25％",
-                  "area": {
-                      "x": 692,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：30％",
-                  "area": {
-                      "x": 0,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：35％",
-                  "area": {
-                      "x": 346,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：40％",
-                  "area": {
-                      "x": 692,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
         }]);
@@ -327,7 +283,7 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseMensBody",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/imagemap/chooseMensBody",
           "altText": "現状選択ボタン",
           "baseSize": {
               "width": 1040,
@@ -337,92 +293,47 @@ var handleMessageEvent = async (ev) => {
               {
                   "type": "message",
                   "text": "${text}\n現状：3-4％",
-                  "area": {
-                      "x": 0,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：6-7％",
-                  "area": {
-                      "x": 346,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：10-12％",
-                  "area": {
-                      "x": 692,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：15％",
-                  "area": {
-                      "x": 0,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：20％",
-                  "area": {
-                      "x": 346,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：25％",
-                  "area": {
-                      "x": 692,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：30％",
-                  "area": {
-                      "x": 0,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：35％",
-                  "area": {
-                      "x": 346,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：40％",
-                  "area": {
-                      "x": 692,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
         }]);
@@ -437,102 +348,55 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseWomensBody",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/imagemap/chooseWomensBody",
           "altText": "理想選択ボタン",
-          "baseSize": {
-              "width": 1040,
-              "height": 1202
+          "baseSize": {"width": 1040, "height": 1202
           },
           "actions": [
               {
                   "type": "message",
                   "text": "${text}\n理想：3-4％",
-                  "area": {
-                      "x": 0,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：6-7％",
-                  "area": {
-                      "x": 346,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：10-12％",
-                  "area": {
-                      "x": 692,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：15％",
-                  "area": {
-                      "x": 0,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：20％",
-                  "area": {
-                      "x": 346,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：25％",
-                  "area": {
-                      "x": 692,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：30％",
-                  "area": {
-                      "x": 0,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：35％",
-                  "area": {
-                      "x": 346,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n理想：40％",
-                  "area": {
-                      "x": 692,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
         }]);
@@ -543,123 +407,59 @@ var handleMessageEvent = async (ev) => {
         },
         {
           "type": "imagemap",
-          "baseUrl": "https://personal-trainer-demo.herokuapp.com/bot/imagemap/chooseWomensBody",
+          "baseUrl": "https://personal-trainer-demo.herokuapp.com/images/imagemap/chooseWomensBody",
           "altText": "現状選択ボタン",
-          "baseSize": {
-              "width": 1040,
-              "height": 1202
-          },
+          "baseSize": {"width": 1040, "height": 1202},
           "actions": [
               {
                   "type": "message",
                   "text": "${text}\n現状：3-4％",
-                  "area": {
-                      "x": 0,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：6-7％",
-                  "area": {
-                      "x": 346,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：10-12％",
-                  "area": {
-                      "x": 692,
-                      "y": 0,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：15％",
-                  "area": {
-                      "x": 0,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：20％",
-                  "area": {
-                      "x": 346,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：25％",
-                  "area": {
-                      "x": 692,
-                      "y": 400,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：30％",
-                  "area": {
-                      "x": 0,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：35％",
-                  "area": {
-                      "x": 346,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
                   "text": "${text}\n現状：40％",
-                  "area": {
-                      "x": 692,
-                      "y": 800,
-                      "width": 346,
-                      "height": 400
-                  }
+                  "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
         }]);
       }
     }
 }
-
-// // imagemapメッセージ用画像レスポンス
-// router.get('/imagemap/chooseSex/700', function (req, res, next) {
-//   console.log("通りました");
-//   let filepath = path.join(__dirname, '../public/images/imagemap/chooseSex/700.jpg');
-//   res.sendFile(filepath);
-//   console.log("とりあえず返したで");
-// });
-// router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
-//   console.log(req.params.filename);
-//   res.sendFile(path.resolve('../public/images/imagemap/chooseMensBody/'+req.params.filename+'.jpg'));
-// });
-// router.get('/imagemap/chooseWomensBody/:filename', function (req, res) {
-//   console.log(req.params.filename);
-//   res.sendFile(path.resolve('../public/images/imagemap/chooseWomensBody/'+req.params.filename+'.jpg'));
-// });
 
 module.exports = router;
