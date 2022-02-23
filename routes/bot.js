@@ -663,7 +663,7 @@ var handleMessageEvent = async (ev) => {
 router.get('/imagemap/chooseSex/:filename', function (req, res) {
   console.log(req.params.filename);
   console.log("通りました");
-  res.sendFile(path.resolve('../public/images/imagemap/chooseSex/'+req.params.filename+'.jpg'));
+  res.sendFile(path.resolve('public/images/imagemap/chooseSex/'+req.params.filename+'.jpg'));
 });
 router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
   console.log(req.params.filename);
