@@ -664,6 +664,7 @@ router.get('/imagemap/chooseSex/700', function (req, res, next) {
   console.log("通りました");
   let filepath = path.join(__dirname, '../public/images/imagemap/chooseSex/700.jpg');
   res.sendFile(filepath);
+  console.log("とりあえず返したで");
 });
 router.get('/imagemap/chooseMensBody/:filename', function (req, res) {
   console.log(req.params.filename);
