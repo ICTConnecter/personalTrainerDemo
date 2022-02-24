@@ -182,7 +182,8 @@ var greeting_follow = async (ev) => {
 var handleMessageEvent = async (ev) => {
     var profile = await client.getProfile(ev.source.userId);
     var text = (ev.message.type === 'text') ? ev.message.text : '';
-    
+    console.log(text);
+    console.log(text.indexOf('性別：男性'));
     if ('診断開始' == text) {
       return client.replyMessage(ev.replyToken,[{
         "type":"text",
