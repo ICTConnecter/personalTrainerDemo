@@ -231,48 +231,48 @@ var handleMessageEvent = async (ev) => {
           "actions": [
               {
                   "type": "message",
-                  "text": "${text}\n理想：3-4％",
+                  "text": `${text}\n理想：3-4％`,
                   "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：6-7％",
+                  "text": `${text}\n理想：6-7％`,
                   "area": {
                       "x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：10-12％",
+                  "text": `${text}\n理想：10-12％`,
                   "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：15％",
+                  "text": `${text}\n理想：15％`,
                   "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：20％",
+                  "text": `${text}\n理想：20％`,
                   "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：25％",
+                  "text": `${text}\n理想：25％`,
                   "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：30％",
+                  "text": `${text}\n理想：30％`,
                   "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：35％",
+                  "text": `${text}\n理想：35％`,
                   "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：40％",
+                  "text": `${text}\n理想：40％`,
                   "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
@@ -293,47 +293,47 @@ var handleMessageEvent = async (ev) => {
           "actions": [
               {
                   "type": "message",
-                  "text": "${text}\n現状：3-4％",
+                  "text": `${text}\n現状：3-4％`,
                   "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：6-7％",
+                  "text": `${text}\n現状：6-7％`,
                   "area": {"x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：10-12％",
+                  "text": `${text}\n現状：10-12％`,
                   "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：15％",
+                  "text": `${text}\n現状：15％`,
                   "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：20％",
+                  "text": `${text}\n現状：20％`,
                   "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：25％",
+                  "text": `${text}\n現状：25％`,
                   "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：30％",
+                  "text": `${text}\n現状：30％`,
                   "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：35％",
+                  "text": `${text}\n現状：35％`,
                   "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：40％",
+                  "text": `${text}\n現状：40％`,
                   "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
@@ -356,47 +356,47 @@ var handleMessageEvent = async (ev) => {
           "actions": [
               {
                   "type": "message",
-                  "text": "${text}\n理想：3-4％",
+                  "text": `${text}\n理想：3-4％`,
                   "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：6-7％",
+                  "text": `${text}\n理想：6-7％`,
                   "area": {"x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：10-12％",
+                  "text": `${text}\n理想：10-12％`,
                   "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：15％",
+                  "text": `${text}\n理想：15％`,
                   "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：20％",
+                  "text": `${text}\n理想：20％`,
                   "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：25％",
+                  "text": `${text}\n理想：25％`,
                   "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：30％",
+                  "text": `${text}\n理想：30％`,
                   "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：35％",
+                  "text": `${text}\n理想：35％`,
                   "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n理想：40％",
+                  "text": `${text}\n理想：40％`,
                   "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
@@ -414,47 +414,47 @@ var handleMessageEvent = async (ev) => {
           "actions": [
               {
                   "type": "message",
-                  "text": "${text}\n現状：3-4％",
+                  "text": `${text}\n現状：3-4％`,
                   "area": {"x": 0, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：6-7％",
+                  "text": `${text}\n現状：6-7％`,
                   "area": {"x": 346, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：10-12％",
+                  "text": `${text}\n現状：10-12％`,
                   "area": {"x": 692, "y": 0, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：15％",
+                  "text": `${text}\n現状：15％`,
                   "area": {"x": 0, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：20％",
+                  "text": `${text}\n現状：20％`,
                   "area": {"x": 346, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：25％",
+                  "text": `${text}\n現状：25％`,
                   "area": {"x": 692, "y": 400, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：30％",
+                  "text": `${text}\n現状：30％`,
                   "area": {"x": 0, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：35％",
+                  "text": `${text}\n現状：35％`,
                   "area": {"x": 346, "y": 800, "width": 346, "height": 400}
               },
               {
                   "type": "message",
-                  "text": "${text}\n現状：40％",
+                  "text": `${text}\n現状：40％`,
                   "area": {"x": 692, "y": 800, "width": 346, "height": 400}
               }
           ]
