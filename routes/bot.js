@@ -212,10 +212,10 @@ var handleMessageEvent = async (ev) => {
         "type":"text",
         "text":`トレーニング解説機能を実装予定`
       });
-    } else if (text.indexOf('性別：男性') > 0) {
-      if ((text.indexOf('：') == 3) && (text.indexOf('性別') == 1) && (text.indexOf('理想') == 1) && (text.indexOf('現実') == 1)) {
+    } else if (text.indexOf('性別：男性') != -1) {
+      if ((text.indexOf('理想：') != -1) && (text.indexOf('現実：') != -1)) {
         return client.replyMessage(ev.replyToken,{});    //　計算処理を記載
-      } else if ((text.indexOf('：') == 2) && (text.indexOf('性別') == 1) && (text.indexOf('現実') == 1)) {
+      } else if ((text.indexOf('現実：') != -1)) {
         return client.replyMessage(ev.replyToken,[{
           "type":"text",
           "text":`理想の体型を選択してください`
@@ -277,7 +277,7 @@ var handleMessageEvent = async (ev) => {
               }
           ]
         }]);
-      } else if ((text.indexOf('：') == 1) && (text.indexOf('性別') == 1)) {
+      } else {
         return client.replyMessage(ev.replyToken,[{
           "type":"text",
           "text":`現状の体型を選択してください`
@@ -340,9 +340,9 @@ var handleMessageEvent = async (ev) => {
         }]);
       }
     } else if (text.indexOf('性別：女性') > 0) {
-      if ((text.indexOf('：') == 3) && (text.indexOf('性別') == 1) && (text.indexOf('理想') == 1) && (text.indexOf('現実') == 1)) {
+      if ((text.indexOf('理想：') != -1) && (text.indexOf('現実：') != -1)) {
         return client.replyMessage(ev.replyToken,{});    //　計算処理を記載
-      } else if ((text.indexOf('：') == 2) && (text.indexOf('性別') == 1) && (text.indexOf('現実') == 1)) {
+      } else if ((text.indexOf('現実：') != -1)) {
         return client.replyMessage(ev.replyToken,[{
           "type":"text",
           "text":`理想の体型を選択してください`
@@ -401,7 +401,7 @@ var handleMessageEvent = async (ev) => {
               }
           ]
         }]);
-      } else if ((text.indexOf('：') == 1) && (text.indexOf('性別') == 1)) {
+      } else {
         return client.replyMessage(ev.replyToken,[{
           "type":"text",
           "text":`現状の体型を選択してください`
